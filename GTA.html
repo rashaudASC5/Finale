@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA</title>
+    <link rel="stylesheet" href="Gamepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <!--  <script src="Video.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100976226966978620/Bannnnnnnner.png" alt="" id="banner">
+    </div>
+
+    <div class="con">
+        <div class="img"> 
+            <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100978461113339974/Grand_Theft_Auto_V.png" alt="" class="Game" id="Thumbnail">
+        </div>
+
+        <div id="content">
+            <h1 class="text">Overview</h1>
+            <p class="text">Grand Theft Auto V (GTA 5) is an open-world action-adventure video game that takes place in a fictional city called Los Santos. Players take control of three protagonists, Michael, Franklin, and Trevor, and can switch between them to complete various missions and heists. The game also features a vast world to explore, a robust online multiplayer mode, and a variety of side activities like sports, minigames, and more. The Online counterpart is very similar to GTA 5 but with personalized characters and the ability to play with friends!!!</p>
+            <ul>
+                <p class="points"><span>•Level Up your characters</span></p>
+                <p class="points"><span>•Unlock ther most Weapons</span></p>
+                <p class="points"><span>•Make the most Money</span></p>
+            </ul>
+                <!--This will be the highlight reel-->
+            <div>
+                <div class="play">
+                <h2>Highlights</h2>
+                <button onclick="playPause();playPause2()">Play/Pause</button>
+                </div>
+                <video id="video1" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100985765036576848/GTA3_1.mp4" type="video/mp4">
+                </video>
+                <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100985914588672010/GTA4.png" alt="" class="size">
+                <video id="video2" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100985765917364296/GTA2_1.mp4" type="video/mp4">
+                </video>
+
+
+<!-- Script Breaks when in a JS file due to some Local and Global reasons-->
+                <script>
+                    var myVideo = document.getElementById("video1"); 
+                    var myVideo2 = document.getElementById("video2");
+
+                    function playPause() { 
+                        if (myVideo.paused) 
+                            myVideo.play(); 
+                        else 
+                            myVideo.pause(); 
+                    }
+                    function playPause2(){
+                        if (myVideo2.paused) 
+                            myVideo2.play(); 
+                        else 
+                            myVideo2.pause(); 
+                    }
+                </script>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

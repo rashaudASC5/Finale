@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Heart</title>
+    <link rel="stylesheet" href="Gamepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <!--  <script src="Video.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100976226966978620/Bannnnnnnner.png" alt="" id="banner">
+    </div>
+
+    <div class="con">
+        <div class="img"> 
+            <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100978274689101874/Atomic_Heart_cover.jpg" alt="" class="Game">
+        </div>
+
+        <div id="content">
+            <h1 class="text">Overview</h1>
+            <p class="text">Welcome to a utopian world of wonders and perfection, in which humans live in harmony with their loyal and fervent robots. Well, that's how it used to be. With the launch of the latest robot-control system mere days away, only a tragic accident or a global conspiracy could disrupt it… The unstoppable course of technology along with secret experiments have brought rise to mutant creatures, terrifying machines and superpowered robots—all suddenly rebelling against their creators. Only you can stop them and find out what lies behind the idealized world.</p>
+            <ul>
+                <p class="points"><span>•Upgrade your arsenal</span></p>
+                <p class="points"><span>•Fight against various robotic bosses</span></p>
+                <p class="points"><span>•Unravel the Conspiracy</span></p>
+            </ul>
+                <!--This will be the highlight reel-->
+            <div>
+                <div class="play">
+                <h2>Highlights</h2>
+                <button onclick="playPause();playPause2()">Play/Pause</button>
+                </div>
+                <video id="video1" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100981685845250139/AH1.mp4" type="video/mp4">
+                </video>
+                <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100981690450587658/AH3.png" alt="" class="size">
+                <video id="video2" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100981689544626296/AH2.mp4" type="video/mp4">
+                </video>
+
+
+<!-- Script Breaks when in a JS file due to some Local and Global reasons-->
+                <script>
+                    var myVideo = document.getElementById("video1"); 
+                    var myVideo2 = document.getElementById("video2");
+
+                    function playPause() { 
+                        if (myVideo.paused) 
+                            myVideo.play(); 
+                        else 
+                            myVideo.pause(); 
+                    }
+                    function playPause2(){
+                        if (myVideo2.paused) 
+                            myVideo2.play(); 
+                        else 
+                            myVideo2.pause(); 
+                    }
+                </script>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    background-image: url("https://cdn.discordapp.com/attachments/474570799492366348/1100982093686784110/Backgtound.png");
+    background-size: contain;
+    /*background-color: hsl(285, 100%, 18%);*/
+    cursor: crosshair;
+}
+
+/*Specific for the banner section*/
+#banner{
+    width: 100%;
+    height: 97px;
+}
+
+#header{
+    border: 7px black ridge;
+    border-radius: 10px;
+    height: 97px;
+    width: fit-content;
+    margin: auto;
+}
+
+/*For the actual content*/
+.con{
+    display: flex;
+}
+.size{
+    width: 30%;
+    border: 2px black groove;
+    border-radius: 5px;
+}
+
+.play{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+button{
+    width: 20%;
+    height: fit-content;
+    align-self: center;
+    color: purple;
+    background-color: lightgrey;
+    border: 3px black outset;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: blueviolet;
+    cursor:pointer;
+}
+
+
+.points{
+    margin-top: -1.45%;
+}
+
+
+
+
+.img{
+    background-color: aliceblue;
+    border: 7px black ridge;
+    border-radius: 5px;
+    margin-top: 3%;
+    width: 450%;
+    height: 500px;
+}
+.Game{
+    height: 100%;
+    width: 100%;
+}
+#content{
+    background-color: aliceblue;
+    margin-top: 3%;
+    border: 7px black ridge;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Instrument Serif', serif;
+}
+#highlights{
+    background-color: aliceblue;
+    border: 7px black ridge;
+    border-radius: 5px;
+    height: 185px;
+    text-align: center;
+    font-family: 'Instrument Serif', serif;
+}
+
+h2, h1{
+    color: blueviolet;
+    text-decoration: underline dotted;
+}
+
+@media screen and (max-width: 800px) {
+    .con{
+        display: block;
+    }
+    .play{
+        display: block;
+    }
+    .img{
+        margin: auto;
+        margin-top: 1%;
+        width: 95%;
+    }
+    button{
+        width: 50%;
+    }
+    .size{
+        width: 50%;
+        border: 2px black groove;
+        border-radius: 5px;
+    }
+    #video1{
+        margin-top: 2%;
+    }
+}

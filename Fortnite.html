@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="GamepageFAT.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <!--  <script src="Video.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100976226966978620/Bannnnnnnner.png" alt="" id="banner">
+    </div>
+
+    <div class="con">
+        <div class="img"> 
+            <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100978639933276191/Fortnite.jpg" alt="" class="Game">
+        </div>
+
+        <div id="content">
+            <h1 class="text">Overview</h1>
+            <p class="text">Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite Battle Royale, a free-to-play battle royale game in which up to 100 players fight to be the last person standing; Fortnite: Save the World, a cooperative hybrid tower defense-shooter and survival game in which up to four players fight off zombie-like creatures and defend objects with traps and fortifications they can build; and Fortnite Creative, in which players are given complete freedom to create worlds and battle arenas.</p>
+            <ul>
+                <p class="points"><span>•Level Up your Battlepass</span></p>
+                <p class="points"><span>•Get The Most VIctory Royales</span></p>
+            </ul>
+                <!--This will be the highlight reel-->
+            <div>
+                <div class="play">
+                <h2>Highlights</h2>
+                <button onclick="playPause();playPause2()">Play/Pause</button>
+                </div>
+                <video id="video1" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100983746984935434/F1_1.mp4" type="video/mp4">
+                </video>
+                <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100983112378372166/F3.jpg" alt="" class="size">
+                <video id="video2" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100983748285173872/F2_1.mp4" type="video/mp4">
+                </video>
+
+
+<!-- Script Breaks when in a JS file due to some Local and Global reasons-->
+                <script>
+                    var myVideo = document.getElementById("video1"); 
+                    var myVideo2 = document.getElementById("video2");
+
+                    function playPause() { 
+                        if (myVideo.paused) 
+                            myVideo.play(); 
+                        else 
+                            myVideo.pause(); 
+                    }
+                    function playPause2(){
+                        if (myVideo2.paused) 
+                            myVideo2.play(); 
+                        else 
+                            myVideo2.pause(); 
+                    }
+                </script>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

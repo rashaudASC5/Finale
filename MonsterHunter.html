@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter</title>
+    <link rel="stylesheet" href="GamepageFATTER.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <!--  <script src="Video.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100976226966978620/Bannnnnnnner.png" alt="" id="banner">
+    </div>
+
+    <div class="con">
+        <div class="img"> 
+            <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100978995929022514/MonsterHR.jpg" alt="" class="Game">
+        </div>
+
+        <div id="content">
+            <h1 class="text">Overview</h1>
+            <p class="text">Hunt down a plethora of monsters with distinct behaviors and deadly ferocity. From classic returning monsters to all-new creatures inspired by Japanese folklore, including the flagship wyvern Magnamalo, you’ll need to think on your feet and master their unique tendencies if you hope to reap any of the rewards!Wield 14 different weapon types that offer unique gameplay styles, both up-close and from long range.</p>
+            <ul>
+                <p class="points"><span>•Level Up your Battlepass</span></p>
+                <p class="points"><span>•Get The Most VIctory Royales</span></p>
+            </ul>
+                <!--This will be the highlight reel-->
+            <div>
+                <div class="play">
+                <h2>Highlights</h2>
+                <button onclick="playPause();playPause2()">Play/Pause</button>
+                </div>
+                <video id="video1" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100985761328795648/MHR1_1.mp4" type="video/mp4">
+                </video>
+                <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100985913569456159/MHR3.png" alt="" class="size">
+                <video id="video2" controls muted class="size">
+                    <source src="https://cdn.discordapp.com/attachments/474570799492366348/1100985759961456690/MHR2_1.mp4" type="video/mp4">
+                </video>
+
+
+<!-- Script Breaks when in a JS file due to some Local and Global reasons-->
+                <script>
+                    var myVideo = document.getElementById("video1"); 
+                    var myVideo2 = document.getElementById("video2");
+
+                    function playPause() { 
+                        if (myVideo.paused) 
+                            myVideo.play(); 
+                        else 
+                            myVideo.pause(); 
+                    }
+                    function playPause2(){
+                        if (myVideo2.paused) 
+                            myVideo2.play(); 
+                        else 
+                            myVideo2.pause(); 
+                    }
+                </script>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

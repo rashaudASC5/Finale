@@ -1,0 +1,121 @@
+body{
+    background-image: url("https://cdn.discordapp.com/attachments/474570799492366348/1100982093686784110/Backgtound.png");
+    background-size: contain;
+    /*background-color: hsl(285, 100%, 18%);*/
+    cursor: crosshair;
+}
+
+/*Specific for the banner section*/
+#banner{
+    width: 79%;
+    height: 97px;
+    border-right: 4px purple outset;
+}
+#inter{
+    float: right;
+    width: 20.5%;
+    height: 97px;
+}
+#header{
+    border: 7px black ridge;
+    border-radius: 10px;
+    height: 97px;
+}
+
+
+/*Specific for the games section container*/
+#contain{
+    background-color: hsl(285, 100%, 39%);
+    width: 95%;
+/*    display: flex;
+    flex-wrap: wrap; */
+    border: 7px black ridge;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/*Specific for the games section*/
+/*actual divs*/
+.content{
+    background-color: aqua;
+    border: 7px black ridge;
+    border-radius: 5px;
+    margin: auto;
+    width: fit-content;
+    height: 200px;
+}
+/*game images*/
+.Game{
+    height: 200px;
+}
+
+.layer{
+    border: 7px black ridge;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    background-image: url("https://cdn.discordapp.com/attachments/474570799492366348/1100982368103313518/Stars.jpg");
+    margin: 1%;
+}
+#fort{
+    margin-right: 1%;
+}
+
+#header:hover{
+    border: 7px white ridge;
+}
+#header:active{
+    border: 7px rgb(195, 0, 255) ridge;
+}
+
+.content:hover{
+    border: 7px white ridge;
+}
+.content:active{
+    border: 7px rgb(195, 0, 255) ridge;
+}
+
+@media screen and (max-width: 800px) {
+    #header{
+        border: 7px black ridge;
+        border-radius: 10px;
+        height: 85px;
+        width: 90%;
+        display: flex;
+        margin: auto;
+        
+    }
+    #banner{
+        width: 70%;
+        height: 85px;
+        border-right: 4px purple outset;
+    }
+    #inter{
+        width: 100%;
+        height: 85px;
+    }
+    .layer{
+        display: block;
+    }
+    .img{
+        margin: auto;
+        margin-top: 1%;
+    }
+    button{
+        width: 50%;
+    }
+    .content{
+        margin-top: 2%;
+        width: 80%;
+    }
+    .Game{
+        width: 100%;
+    }
+    #fort{
+        margin: auto;
+    }
+    #contain{
+        width: 90%;
+    }
+}

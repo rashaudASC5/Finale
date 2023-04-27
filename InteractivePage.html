@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="InteractivePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+    <!--  <script src="Video.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100976226966978620/Bannnnnnnner.png" alt="" id="banner">
+    </div>
+
+    <div class="con">
+        <div class="img"> 
+            <img src="https://cdn.discordapp.com/attachments/474570799492366348/1100987288596533278/IpageImage.png" alt="" class="Game" id="image_preview">
+        </div>
+
+        <div id="content">
+            <h1 class="text">You Can Try</h1>
+            <button onclick="Words()" class="text">Insert Synopsis</button>
+            <ul>
+                <p>•<span class="points" id="point1">Insert Key point #1</span></p>
+                <p>•<span class="points" id="point2">Insert Key point #2</span></p>
+                <p>•<span class="points" id="point3">Insert Key point #3</span></p>
+            </ul>
+                <!--This will be the highlight reel-->
+            <div>
+                <div class="play">
+                <h2>Insert Your Thumbnail</h2>
+            <div id="button_container">
+                <button id="button">Select File</button>
+                <input type="file" id="image_input" class="hidden">
+            </div>
+                
+
+
+<!-- Script Breaks when in a JS file due to some Local and Global reasons-->
+                <script>
+                    	var button = document.getElementById('button');
+		                var imageInput = document.getElementById('image_input');
+		                var imagePreview = document.getElementById('image_preview');
+
+		                // Listen for button click
+		                button.addEventListener('click', function(e) {
+		            	imageInput.click();
+		                });
+
+                        // Listen for file selection
+                        imageInput.addEventListener('change', function(e) {
+                            var file = imageInput.files[0];
+                            var reader = new FileReader();
+
+                            reader.onload = function(e) {
+                                imagePreview.src = e.target.result;
+                                imagePreview.style.display = 'inline-block';
+                                button.style.display = 'none';
+                            };
+
+                            reader.readAsDataURL(file);
+                        });
+
+
+                        function Words(){
+                            let point1 = prompt("Insert Key point #1")
+                            
+                            if (point1 != null) {
+                                document.getElementById("point1").innerHTML = point1;
+                            }
+                            else{
+                                document.getElementById("point1").innerHTML = "You didn't input anything for this Key point";
+                            }
+
+                            let point2 = prompt("Insert Key point #2")
+
+                            if (point2 != null) {
+                                document.getElementById("point2").innerHTML = point2;
+                            }
+                            else{
+                                document.getElementById("point2").innerHTML = "You didn't input anything for this Key point";
+                            }
+
+                            let point3 = prompt("Insert Key point #3")
+
+                            if (point3 != null) {
+                                document.getElementById("point3").innerHTML = point3;
+                            }
+                            else{
+                                document.getElementById("point3").innerHTML = "You didn't input anything for this Key point";
+                            }
+
+                        }
+                </script>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
